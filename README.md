@@ -65,19 +65,20 @@ javax.mail包提供了一整套的邮件系统的API
 
 
 
-配置相关：发送主机需要区分，如果不是qq邮箱的账号，请使用相应邮箱的主机发送。
-如下
+配置相关：发送主机需要区分，如果不是qq邮箱的账号，请使用相应邮箱的主机发送。如下
+
 ![setting](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/settingconfig.jpg?raw=true)
 
 全部填写完成如下
+
 ![setting](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/complete.jpg?raw=true)
 
 最后点击发送即可发送
 
-
 最后顺便贴一下从web访问的时候修改html来达到修改邮箱时间的效果，如果能写一个html拦截器应该就能以假乱真了。
 
 进入任意web页面，比如收件箱
+
 ![web](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/webmodifyq.jpg?raw=true)
 可以看到第一封邮件的时间是昨天23：00
 
@@ -89,7 +90,7 @@ javax.mail包提供了一整套的邮件系统的API
 
 ![web](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/webmodify2.jpg?raw=true)
 
-最后面点击修改内容即可
+最后面点击修改成任意你想要修改的文字即可
 
 
 
