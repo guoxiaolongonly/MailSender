@@ -28,12 +28,15 @@ javax.mail包提供了一整套的邮件系统的API
 ## 使用说明
 
 ![main](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/main1.jpg?raw=true)
+
 帐号：邮箱帐号   例:719243738@qq.com
 密码：邮箱密码应该也可以,但是腾讯有一个smtp授权码，具体操作如下
 ![account](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/accountConfig1.jpg?raw=true)
+
 1. 进入邮箱首页，点击-设置
 
 ![account](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/accountConfig2.jpg?raw=true)
+
 2. 点击-账户  ，然后往下滑
 
 ![account](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/accountConifg3.jpg?raw=true)
@@ -60,6 +63,7 @@ javax.mail包提供了一整套的邮件系统的API
 2.编写完邮件后点击-格式，点击- </> 符号
 
 ![edit](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/editconfig2.jpg?raw=true)
+
 3.复制文本粘贴到文本区域
 
 
@@ -80,6 +84,7 @@ javax.mail包提供了一整套的邮件系统的API
 进入任意web页面，比如收件箱
 
 ![web](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/webmodifyq.jpg?raw=true)
+
 可以看到第一封邮件的时间是昨天23：00
 
 ![web](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/webmodify3.png?raw=true)
