@@ -30,7 +30,7 @@ javax.mail包提供了一整套的邮件系统的API
 ![main](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/main1.jpg?raw=true)
 
 帐号：邮箱帐号   例:719243738@qq.com
-密码：邮箱密码应该也可以,但是腾讯有一个smtp授权码，具体操作如下
+密码：获取邮箱smtp授权码，具体操作如下
 ![account](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/accountConfig1.jpg?raw=true)
 
 1. 进入邮箱首页，点击-设置
@@ -67,6 +67,11 @@ javax.mail包提供了一整套的邮件系统的API
 3.复制文本粘贴到文本区域
 
 
+补充：2018-08-14 14:02:27
+
+朋友在测试时发现的一些问题，网易163邮箱的发件时间跟收件时间是一致的。也可能是网易根本没有管你什么时候发邮件，邮件服务器什么时候接受到邮件时间就是什么时候，所以163邮箱的邮件时间不能更改。QQ邮箱可以更改，其他的问题暂未测试。
+
+发现QQ邮箱写邮件的时候图片上传只是先上传到一个缓存的图片服务器，直接转html格式的图片链接会有一个有效期限过了这个有效期限图片就会自动失效。这里建议用一些不会过期的网络图片的url。否则图片过一段时间将无法查看。
 
 
 配置相关：发送主机需要区分，如果不是qq邮箱的账号，请使用相应邮箱的主机发送。如下

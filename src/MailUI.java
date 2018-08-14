@@ -3,7 +3,7 @@ import javax.swing.text.JTextComponent;
 import java.awt.event.*;
 
 
-public class MailUI  {
+public class MailUI {
 
     private final static String HINT_ACCOUNT_INPUT = "请输入邮箱帐号";
     private final static String HINT_PASSWORD_INPUT = "请输入邮箱密码或者SMTP授权码";
@@ -64,6 +64,12 @@ public class MailUI  {
 
     private void initData() {
         mConfigInfo = FileUtil.getConfig();
+        setHint(tfUserAccount, HINT_ACCOUNT_INPUT);
+        setHint(tfUserPassword, HINT_PASSWORD_INPUT);
+        setHint(tfToAddress, HINT_RECEIVE_INPUT);
+        setHint(tfMailTime, HINT_MAIL_DATE);
+        setHint(tfMailTitle, HINT_MAIL_TITLE);
+        setHint(taMailContent, HINT_MAIL_CONTENT);
         if (mConfigInfo == null) {
             mConfigInfo = new ConfigInfo();
             mConfigInfo.auth = "mail.smtp.auth";
@@ -71,16 +77,17 @@ public class MailUI  {
             mConfigInfo.mailSendHost = "smtp.qq.com";
         }
         if (!"".equals(mConfigInfo.account)) {
-            tfUserAccount.setText("");
+            tfUserAccount.setText(mConfigInfo.account);
         }
         if (!"".equals(mConfigInfo.password)) {
-            tfUserPassword.setText("");
+            tfUserPassword.setText(mConfigInfo.password);
         }
     }
 
     private void setListener() {
 
         mOnSubmitListener = configInfo -> {
+            mConfigInfo = configInfo;
             FileUtil.writeFile(configInfo);
         };
 
@@ -99,8 +106,7 @@ public class MailUI  {
                             JOptionPane.INFORMATION_MESSAGE
                     );
                     FileUtil.writeFile(mConfigInfo);
-                }else
-                {
+                } else {
                     JOptionPane.showMessageDialog(
                             mFrameLayout,
                             b,
@@ -119,12 +125,6 @@ public class MailUI  {
         });
 
 
-        setHint(tfUserAccount, HINT_ACCOUNT_INPUT);
-        setHint(tfUserPassword, HINT_PASSWORD_INPUT);
-        setHint(tfToAddress, HINT_RECEIVE_INPUT);
-        setHint(tfMailTime, HINT_MAIL_DATE);
-        setHint(tfMailTitle, HINT_MAIL_TITLE);
-        setHint(taMailContent, HINT_MAIL_CONTENT);
     }
 
     public void setHint(JTextComponent jTextComponent, String hintText) {
