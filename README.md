@@ -102,6 +102,70 @@ javax.mail包提供了一整套的邮件系统的API
 
 最后面点击修改成任意你想要修改的文字即可
 
+## 终极攻略：
+
+发现之前更改时间的效果并不是那么满意然后想要用终极级解决方案
+
+技术方面思考，怎么说，因为请求拦截可以分为两种，
+
+一种是在浏览器获得数据前，提前对数据进行更改然后转发给浏览器。有点类似代理的效果，所有的流量都走代理，拦截指定的页面，修改，返回转发修改后的数据。
+
+另外一种就是要在浏览器渲染前，这种的话如果浏览器功能不够强劲的话可能要自己写一个浏览器了。发现谷歌浏览器的ADblock插件能拦截广告，看来能在ADblock上面找找解决方案。不过ADblock提供的自己写的过滤规则，只能隐藏掉某些规则底下的数据。而我们要做的是更改。所以放弃了。
+
+不过通过ADblock强大的功能不难发现，谷歌其实允许插件获取返回的数据进行修改展示。
+
+然后就找到了FindR这个神器，可以替换页面上面任何文本。
+
+
+### 使用方式
+
+首先下载使用Chrome浏览器，下载地址：https://www.google.cn/chrome/
+
+
+然后在浏览器输入：https://chrome.google.com/webstore/category/extensions
+（这边要说明在chrome商店下载插件是要翻墙滴，翻墙请下载蓝灯：https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer.exe，下载完蓝灯之后打开蓝灯，可以看到在右下角有个蓝灯标志![web](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/lantern.png?raw=true)，然后就可以在商店里搜刮资源了）
+
+在搜索框里输入 findR![search](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/search.png?raw=true)按回车
+
+搜索结果找到 findR![add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/addfindR.png?raw=true) 添加至chrome
+
+可以看到浏览器右上角有个 findR图标 ![add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRTab.png?raw=true) 
+
+点击图标 点设置按钮[add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindROperate.png?raw=true) 
+
+进入配置页[Setting](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRSetting.png?raw=true) 
+
+如上，我想要添加一条规则把任何页面的酷酷酷改成小柯柯真棒。点SAVE可以保存这条规则，选中规则 点DELETE可以删除选中的规则。
+
+实战：
+
+我打算吧邮箱中的8月17号替换掉[mailPage](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/MailPage.png?raw=true) 
+
+添加如下规则[regular](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRRegular.png?raw=true) 
+
+刷新页面后结果[regular](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRResult.png?raw=true) 
+
+可以看到所有的8月17日都替换成了柯柯最厉害。
+
+大概就是这样。。
+
+这边有以下几个问题值得注意以下
+
+1.这个修改QQ邮箱暂时不支持。因为QQ邮箱是页面内部跳转。不能及时获取到邮箱页面的更改。
+
+2.这个修改有一个弊端就是所有的匹配项都会更改，如果你想要把同一天的邮件替换成不同日期，那建议每天发一条邮件。
+
+3.后面的更改会覆盖之前的更改 比如你先设置了 2018年08月17日 14:47 (星期五) 更改为 嘻嘻。   后面添加   8月17日 改为 柯柯真厉害 ，这样的话会生效后面一条，也就是说
+
+2018年08月17日 14:47 (星期五) 更改的结果会变成  2018年0柯柯真厉害 14:47 。 所以建议邮件内容的时间更改放到列表的时间更改的后面。
+
+
+
+
+
+
+
+
 
 
 
