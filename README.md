@@ -121,29 +121,46 @@ javax.mail包提供了一整套的邮件系统的API
 
 首先下载使用Chrome浏览器，下载地址：https://www.google.cn/chrome/
 
-
 然后在浏览器输入：https://chrome.google.com/webstore/category/extensions
-（这边要说明在chrome商店下载插件是要翻墙滴，翻墙请下载蓝灯：https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer.exe，下载完蓝灯之后打开蓝灯，可以看到在右下角有个蓝灯标志![web](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/lantern.png?raw=true)，然后就可以在商店里搜刮资源了）
 
-在搜索框里输入 findR![search](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/search.png?raw=true)按回车
+（这边要说明在chrome商店下载插件是要翻墙滴，翻墙请下载蓝灯：https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer.exe  
+，下载完蓝灯之后打开蓝灯，可以看到在右下角有个蓝灯标志![web](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/lantern.png?raw=true)，然后就可以在商店里搜刮资源了）
 
-搜索结果找到 findR![add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/addfindR.png?raw=true) 添加至chrome
+在搜索框里输入 findR
 
-可以看到浏览器右上角有个 findR图标 ![add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRTab.png?raw=true) 
+![search](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/search.png?raw=true)按回车
 
-点击图标 点设置按钮[add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindROperate.png?raw=true) 
+搜索结果找到 findR
 
-进入配置页[Setting](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRSetting.png?raw=true) 
+![add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/addfindR.png?raw=true) 添加至chrome
+
+可以看到浏览器右上角有个 findR图标 
+
+![add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRTab.png?raw=true) 
+
+点击图标 点设置按钮
+
+![add](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindROperate.png?raw=true) 
+
+进入配置页
+
+![Setting](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRSetting.png?raw=true) 
 
 如上，我想要添加一条规则把任何页面的酷酷酷改成小柯柯真棒。点SAVE可以保存这条规则，选中规则 点DELETE可以删除选中的规则。
 
 实战：
 
-我打算吧邮箱中的8月17号替换掉[mailPage](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/MailPage.png?raw=true) 
+我打算吧邮箱中的8月17号替换掉
 
-添加如下规则[regular](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRRegular.png?raw=true) 
+![mailPage](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/MailPage.png?raw=true) 
 
-刷新页面后结果[regular](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRResult.png?raw=true) 
+添加如下规则
+
+![regular](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRRegular.png?raw=true) 
+
+刷新页面后结果
+
+![regular](https://github.com/guoxiaolongonly/MailSender/blob/master/imgs/FindRResult.png?raw=true) 
 
 可以看到所有的8月17日都替换成了柯柯最厉害。
 
